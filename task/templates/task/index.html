@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<div>
+<div>
+    <h1>Список пользователей</h1>
+    {% for user in users %}
+    	<p><a href="{% url 'user_tasks' user_id=user.id %}">{{ user.name }}</a></p>
+    {% endfor %}
+</div>
+
+
+
+</div>
+
+
+
+</body>
+</html>
